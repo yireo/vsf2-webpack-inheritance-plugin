@@ -1,0 +1,22 @@
+{
+  "name": "@yireo/vsf2-webpack-inheritance-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin for Vue Storefront 2 theme inheritance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yireo/vsf2-webpack-inheritance-plugin.git"
+  },
+  "keywords": [
+    "vuestorefront"
+  ],
+  "author": "Jisse Reitsma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yireo/vsf2-webpack-inheritance-plugin/issues"
+  },
+  "homepage": "https://github.com/yireo/vsf2-webpack-inheritance-plugin#readme"
+}
