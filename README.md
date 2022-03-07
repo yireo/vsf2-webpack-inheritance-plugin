@@ -9,7 +9,7 @@ Navigate into your custom app and install this package:
 Next, open up your `nuxt.config.js` and modify your exported configuration so that it includes the following:
 
 ```js
-const Vsf2ThemeInheritancePlugin = require('./vsf2-webpack-inheritance-plugin');
+const Vsf2ThemeInheritancePlugin = require('@yireo/vsf2-webpack-inheritance-plugin');
 const path = require('path');
 
 export default {
