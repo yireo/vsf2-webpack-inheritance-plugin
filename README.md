@@ -67,7 +67,3 @@ This needs to be modified into:
 ```js
 import { SfLink } from "@storefront-ui/vue"
 ```
-
-Or even better, many of the Storefront UI components work by configuring them via properties. We can wrap the old component in the new component like this and modify the props as we see fit:
-```js
-```
