@@ -117,3 +117,27 @@ export default {
 ```
 
 This will destroy lots of functionality, but is just a demo of that the Webpack override works.
+
+### Overriding Vue components of PWA plugins
+You can also override the Vue components offered by remote PWA plugins. (With local PWA plugins, this makes sense: Just modify the files directly.) 
+
+```js
+import extendNuxtConfig from "@shopware-pwa/nuxt-module/config"
+const Vsf2ThemeInheritancePlugin = require('@yireo/vsf2-webpack-inheritance-plugin');
+const path = require('path');
+
+export default extendNuxtConfig({
+  build: {
+    extend(config) {
+      config.resolve.plugins = [
+        new Vsf2ThemeInheritancePlugin({
+          originalPath: path.resolve(__dirname, '.shopware-pwa', 'pwa-bundles-assets'),
+          newPath: path.resolve(__dirname, 'sw-plugins')
+        })
+      ]
+    }
+  }
+})
+```
+
+A Vue component `example.vue` located in the PWA plugin folder `.shopware-pwa/pwa-bundles-assets/swag-example/` can now be overriden in `sw-plugins/swag-example/example.vue`.
